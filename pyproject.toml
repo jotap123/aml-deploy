@@ -1,0 +1,7 @@
+[project]
+name = "project_test1"
+version = "0.1.1"
+authors = [{ name="João Pedro Alves", email="jotapedro1997@gmail.com" }]
+description = "Testing deploy in azure"
+readme = "README.md"
+requires-python = ">=3.7.1"

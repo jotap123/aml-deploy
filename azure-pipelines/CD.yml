@@ -1,0 +1,32 @@
+trigger:
+ branches:
+  include:
+   - master
+   - main
+
+jobs:
+  - job: UpdateAML
+    pool:
+      vmImage: 'ubuntu-latest'
+    steps:
+    - checkout: self
+      persistCredentials: true
+    - task: UsePythonVersion@0
+      inputs:
+        versionSpec: '3.10'
+        addToPath: true
+        architecture: x64
+      displayName: Python version 3.10
+    - task: DownloadSecureFile@1
+      name: deploy_file
+      displayName: Download deploy file
+      inputs:
+        secureFile: .env
+    - script: mv $(deploy_file.secureFilePath) .env
+      displayName: Make .env available
+    - script: |
+        pip install -r requirements.deploy.txt
+      displayName: Install requirements
+    - script: |
+        python deploy.py
+      displayName: Deploy code

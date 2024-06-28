@@ -1,0 +1,6 @@
+[flake8]
+max-line-length=93
+exclude=
+    services/*
+    notebooks/*
+    deploy.py

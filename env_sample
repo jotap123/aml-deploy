@@ -1,0 +1,11 @@
+# Loglevel of the root logger. See dags/logging.py for more details. Defaults to INFO
+# if not provided
+ATENA_LOGLEVEL=INFO
+
+# Azure credentials. In dev it can be stored in `/etc/profile.d/atena-dev-creds` or
+# set here. In production, the deploy script should get those from the `deploy.json`
+# file.
+
+AZURE_CLIENT_ID=XXX
+AZURE_CLIENT_SECRET=XXX
+AZURE_TENANT_ID=XXX

@@ -1,0 +1,8 @@
+# external requirements
+paeio
+click
+colorlog
+colored-traceback
+scikit-learn
+mlflow
+azureml-mlflow
