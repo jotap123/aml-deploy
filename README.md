@@ -11,8 +11,8 @@ Before starting, ensure you have the following:
 
 - **Azure Account**: You'll need an active Azure subscription.
 - **Azure Machine Learning Workspace**: Set up an AML workspace in the Azure portal.
-- **Azure CLI**: The Azure Command-Line Interface (CLI) is necessary for interacting with Azure services. Install it from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
-- **Python**: Python 3.6 or later. You can download it [here](https://www.python.org/downloads/).
+- **Azure CLI**: The Azure Command-Line Interface (CLI) is necessary for interacting with Azure services. You can install it via terminal using `pip install azure-cli` or from [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
+- **Python**: Python 3.8 or later.
 - **Git**: Version control tool to clone this repository.
 
 ## Installation and Setup
